@@ -7,11 +7,12 @@
         <div class="video-home spacing-halls">
             <div class="row">
                 <div class="video-halls">
-                        <video controls="off" autoplay="" muted="" loop="" class="mainVideo">
-                            <source src="{{ asset('/video/entrada-hub.mp4') }}" type="video/mp4">
+                        <video autoplay="" muted="" loop="" class="mainVideo">
+                            <source src="{{ asset('/video/video-hub1.mp4') }}" type="video/mp4">
                         </video>
                         <div class="opacity-halls">
-                            <img src="{{ asset('/images/home/playIcon.svg') }}" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <!-- <div class="loader"></div> -->
+                            <img src="{{ asset('/images/home/playIcon.svg') }}" class="playicon" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         </div>
                 </div>
             </div>
@@ -67,14 +68,41 @@
         </div>   
     </section>
 <!-- SECTION 2 - SPOT -->
-    <section class="purple-home">
+    <section class="purple-home spacing-halls">
         <div class="title-halls-barra">
             <img src="{{ asset('/images/home/halls-purple.svg') }}" alt="">
         </div>
         <div class="spot-info">
             <div class="row">
-                <div class="col-6"></div>
+                <div class="col-7">
+                    <div class="images-spots">
+                        <img src="{{ asset('/images/home/spot_images.svg') }}" alt="">
+                        <div class="halls-menta-1">
+                            <div id="scene">
+                                <div data-depth="0.3"><img src="{{ asset('/images/home/mentas-morada-1.svg') }}" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="text-spots">
+                        <h1>Nuevo <span>en la zona</span></h1>
+                        <p>Dile no a los sitios más básicos del lugar. #RespiraYTomaUnImpulsoReal con Halls y sé el anfitrión más cool entre tus amigos.</p>
+                        <div class="btn-section">
+                            <a href="">Leer más</a>
+                        </div>
+                        <div class="halls-menta-2">
+                            <div id="scene1">
+                                <div data-depth="0.1"><img src="{{ asset('/images/home/mentas-morada-2.svg') }}" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="hash-respira">
+            <h1>#RespiraYTomaUnImpulsoReal</h1>
+            <p>con Halls y rómpela en el semestre.</p>
         </div>
     </section>
 @endsection

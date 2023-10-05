@@ -144,15 +144,48 @@
 }
 /* COMPONENTS  */
 .spacing-halls{
+    padding: 0vw 9vw;
+}
+div#app-halls {
+    overflow-x: hidden;
+}
+
+/* HOME SECCIÓN 1 */
+.video-home{
     padding: 4vw 9vw;
 }
-/* HOME SECCIÓN 1 */
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* .video-halls {
+    position: relative;
+    padding: 0!important;
+} */
 .video-halls {
     position: relative;
     padding: 0!important;
+    min-height: 47vw;
+    border-radius: 20px;
 }
 .video-halls video.mainVideo {
     max-width: 100%;
+    border-radius: 20px;
+}
+.video-halls video.mainVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
 }
 .opacity-halls {
@@ -160,7 +193,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 99%;
+    height: 100%;
     background: #0000003d;
     text-align: center;
     display: flex;
@@ -206,10 +239,81 @@ section.blue-home {
 .title-halls-barra img {
     width: 43vw;
 }
-
+/* HOME SECCIÓN 2  */
 .purple-home {
     background-image: url(../images/home/bg-section-2.svg);
     min-height: 54vw;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.images-spots img {
+    max-width: 100%;
+}
+.text-spots h1 {
+    color: #CD9BFF;
+    font-size: 5vw;
+    font-family: 'GothamBold';
+}
+
+.text-spots h1 span {
+    display: block;
+    color: #fff;
+    font-size: 3.7vw;
+    line-height: 2vw;
+}
+
+.text-spots p {
+    color: #fff;
+    font-family: 'GothamMedium';
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    line-height: 1.6vw;
+}
+
+.text-spots {
+    margin-top: 10vw;
+    margin-left: 3vw;
+    position: relative;
+    z-index: 2;
+}
+.text-spots a {
+    border: solid 2px #CD9BFF;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5vw 2vw;
+    border-radius: 20px;
+    font-family: 'GothamBold';
+}
+.btn-section {
+    margin-top: 2.5vw;
+}
+.halls-menta-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.images-spots {
+    position: relative;
+}
+.halls-menta-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.halls-menta-2 {
+    position: absolute;
+    bottom: -10vw;
+    width: 52vw;
+    z-index: -1;
+    left: -6vw;
+}
+
+.halls-menta-2 img {
+    max-width: 100%;
 }
