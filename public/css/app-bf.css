@@ -1,5 +1,103 @@
+/*Global custom class*/
+
+.ff-gotham-bold {
+    font-family: 'GothamBold';
+}
+.ff-gotham-medium {
+    font-family: 'GothamMedium';
+}
+
+/*Colors */
+.bg-light-h{
+    background-color: #E5E5E5;
+}
+
 /*Nabvar blue*/
 
-.navbar {
-    background-color: blue !important;
+#nav-blue  {
+    background: url(../images/navbar/blue/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top-center;
 }
+/*Nabvar green*/
+#nav-green  {
+    background: url(../images/navbar/green/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top-center;
+}
+/*Nabvar blue*/
+#nav-purple {
+    background: url(../images/navbar/purple/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top-center;
+}
+
+/*Nabvar red*/
+#nav-red {
+    background: url(../images/navbar/red/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top-center;
+}
+
+/*General Nabvar*/
+
+.navbar img {
+    width: 10rem;
+}
+
+.swiper-slide {
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+}
+
+/*Manifestando aumentos*/
+
+.manifestando-aumentos {
+    background: url(../images/pages/green/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.amor-astros {
+    background: url(../images/pages/red/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+/*Footer*/
+
+footer {
+    font-size: 17px;
+    background: url(../images/footer/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 20rem;    
+}
+
+footer a {
+    color: #162F5E;
+}
+
+@media only screen and (max-width: 992px) {
+    /*General Nabvar*/
+    .navbar img {
+        width: 100%;
+    }
+    .navbar-collapse {
+        height: 100vh !important;
+    }
+  }
+
+
+
+
+
+

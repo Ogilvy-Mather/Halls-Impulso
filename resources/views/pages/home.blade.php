@@ -37,7 +37,7 @@
         </div>
         <div class="option-nav-person">
             <div class="title-option">
-                <img src="{{ asset('/images/home/title_respiraconhalls.svg') }}" alt="#Respiraytomaunimpulsoreal">
+                <img src="{{ asset('/images/home/title_respiraconhalls.svg') }}" alt="#Respiraytomaunimpulsoreal" class="wow animate__animated animate__tada" data-wow-delay="0.7s">
             </div>
             <div class="person-option">
                 <div class="row">
@@ -70,7 +70,7 @@
 <!-- SECTION 2 - SPOT -->
     <section class="purple-home spacing-halls">
         <div class="title-halls-barra">
-            <img src="{{ asset('/images/home/halls-purple.svg') }}" alt="">
+            <img src="{{ asset('/images/home/halls-purple.svg') }}" alt="" class="wow animate__animated animate__tada" data-wow-delay="0.7s">
         </div>
         <div class="spot-info">
             <div class="row">
@@ -103,6 +103,37 @@
         <div class="hash-respira">
             <h1>#RespiraYTomaUnImpulsoReal</h1>
             <p>con Halls y rómpela en el semestre.</p>
+        </div>
+        <div class="tiras-consejo">
+            <div class="consejos-home">
+                <img src="{{ asset('/images/home/tiras-morada.svg') }}" alt="">
+                <div class="consejos-title">
+                    <img src="{{ asset('/images/home/consejos-title-sombra.png') }}" alt="" class="wow animate__animated animate__bounceIn" data-wow-delay="1.5s">
+                </div>
+                <div class="object-scene">
+                    <div id="scene2">
+                        <div data-depth="0.4" class="object-morado1"><img src="{{ asset('/images/home/object-morado-1.svg') }}" alt=""></div>
+                        <div data-depth="0.8" class="object-morado2"><img src="{{ asset('/images/home/object-morado-2.svg') }}" alt=""></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="txt-consejos-home">
+                <div class="info-consejos-home">
+                    <p>
+                    No levantes la mano para ir al baño y haz lo imposible para que el profe no sepa tu apellido, son solo algunos consejos para sobrevivir en la U.
+                    </p>
+                    <div class="btn-section">
+                        <a href="">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION 3  -->
+    <section class="green-home spacing-halls">
+        <div class="title-halls-barra wow animate__animated animate__tada" data-wow-delay="0.7s">
+            <img src="{{ asset('/images/home/title_manifestando.svg') }}" alt="">
         </div>
     </section>
 @endsection

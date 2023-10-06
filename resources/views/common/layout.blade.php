@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="{{ asset('/css/bootstrap-reboot.rtl.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/bootstrap-utilities.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/animate.min.css') }}">
+    <!-- JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <!-- pushs styles dinamically -->
+    @stack('styles')
 </head>
 <body>
     <div id="app-halls">
@@ -20,18 +28,6 @@
 <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script src="{{ asset('/js/scrtips.js') }}"></script>
-<script>
-    // PARALLAX ANIMATION 
-    var scene = document.getElementById('scene');
-    var parallaxInstance = new Parallax(scene);
-    var scene1 = document.getElementById('scene1');
-    var parallaxInstance = new Parallax(scene1);
-
-    // SPINER PRELOAD VIDEO
-    // document.querySelector('.mainVideo').addEventListener('canplay', function() {
-    // document.querySelector('.loader').style.display = 'none';
-    // document.querySelector('.playicon').style.display = 'block';
-    // });
-</script>
+@yield('scripts')
 </body>
 </html>
